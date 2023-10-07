@@ -1,0 +1,75 @@
+
+	<div class="page no-border">
+		<div class="page-inner p-none no-border">
+			<section class="section-primary no-border p-0" style="background-color:#ffffff;padding-bottom:0px">
+				<div class="container-fluid no-border p-0" id="custodian-product">
+<div class="container product-content">
+	<div class="stepwizard col-md-12 formtop-width">
+	<div class="row">
+		<div class="col-md-12 order-md-1 order-2 form-sha">
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        <div class="progress-step progress-step-active"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+      </div>
+			<form role="form" method="post" enctype="multipart/form-data">
+              <div class="row setup-content" id="step-1" style="display: flex;">
+                <div class="col-md-12">
+                  <h3 class="text-center fontn">Summary</h3>
+                 <div class="row setup-content pady" id="step-3" style="margin:0px;">
+                    <div class="col-md-12" style="margin-top: 10px;">
+                        <div>
+                            <section class="section-primary pt-none">
+                                <div>
+                                    <div class="row">
+                                        <div class="mt-5" style="margin-top:40px;">
+                                            <table class="table table-bordered text-start">
+                                                <!--<caption style="font-size: 16px;">Quotation Detail</caption>-->
+                                              <tbody>
+                                                {{#each data}}
+                                                <tr>
+                                                  <td><strong>{{key}}: </strong></td>
+                                                  <td><span id="{{id}}">{{value}}</span></td>
+                                                </tr>
+                                                {{/each}}
+                                              </tbody>
+                                            </table>
+                                            <div class="summary-buttons">
+                                              <nav id="tp-and-ft-buttonset"
+                                                   class="c-breadcrumb-1 c-breadcrumb-1-onCheckout -style-icons">
+                                                <ol class="c-breadcrumb-1-inner">
+                                                  <li class="c-breadcrumb-1-item">
+                                                    <a href="javascript:;" class="c-breadcrumb-1-link">
+                                                      <i class="c-breadcrumb-1-icon fa fa-download" aria-hidden="true"></i>
+                                                      Download Quote
+                                                    </a>
+                                                  </li>
+                                                  <li class="c-breadcrumb-1-item">
+                                                    <a href="javascript:;" class="c-breadcrumb-1-link">
+                                                      <i class="c-breadcrumb-1-icon fa fa-envelope" aria-hidden="true"></i>
+                                                      Save Quote
+                                                    </a>
+                                                  </li>
+                                                </ol>
+                                              </nav>
+                                              <button class="btn px-3 buyNow-btn">Buy Now</button>
+                                            </div>
+                                             </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    	</form>
+		</div>
+	</div>
+</div>
+</div>
+                  </div>
+</section>
+</div>
+    </div>

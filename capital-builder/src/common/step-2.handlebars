@@ -1,0 +1,108 @@
+	<div class="page no-border">
+		<div class="page-inner p-none no-border">
+			<section class="section-primary no-border p-0" style="background-color:#ffffff;padding-bottom:0px">
+				<div class="container-fluid no-border p-0" id="custodian-product">
+<div class="container product-content">
+	<div class="row">
+		<div class="col-md-12 order-md-1 order-2 form-sha">
+            <div class="progressbar">
+                <div class="progress" id="progress"></div>
+                <div class="progress-step progress-step-active"></div>
+                <div class="progress-step"></div>
+                <div class="progress-step"></div>
+             </div>
+			<form role="form" method="post" enctype="multipart/form-data" name="productForm">
+<div class="row setup-content" id="step-2" style="display: flex;">
+        <div class="col-md-12">
+        <h3 class="text-center fontn">Benefits</h3>
+        <div class="smart-forms">
+            <div class="frm-row">
+                <div class="colm colm6">
+                    <div class="section">
+                        <label class="field">
+                            <input type="text" name="Premium"  id="premium" class="gui-input" required
+                                oninput="this.value = this.value.replace(/[^0-9]/g, '').substring(0,10);" value=""
+                                placeholder="Enter Amount to Save">
+                        </label>
+                    </div>
+                </div>
+                <div class="colm colm6">
+                    <div class="section">
+                        <label class="field select">
+                            <select id="payment_frequency_code"  name="PaymentFrequency" required="">
+                                <option value="">Select Payment Frequency</option>
+                                <option value="ANNUALLY">ANNUALLY</option>
+                                <option value="SINGLE PREMIUM">SINGLE PREMIUM</option>
+                                <option value="MONTHLY">MONTHLY</option>
+                                <option value="QUARTERLY">QUARTERLY</option>
+                                <option value="ANNUALLY">SEMI-ANNUALLY</option>
+                            </select>
+                            <i class="arrow double"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="colm colm6">
+                    <div class="section">
+                        <label class="field select">
+                            <select id="policy_term" name="PolicyTerm" required="">
+                                <option value="">Select Policy Term (No. of years</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <i class="arrow double"></i>
+                        </label>
+                    </div>
+                </div>
+                <div id="display-amounts" style="display: block">
+
+                    <div class="colm colm6">
+                        <div class="section">
+                            <!--<label for="sum_assured" class="field-label">
+                                Target Amount
+                                <span class="small-text fine-grey"><strong></strong></span>
+                            </label>-->
+                            <label class="field">
+                                <input type="text" name="TargetAmount" value="76543" id="sum_assured_field" class="gui-input" placeholder="Not Computed"
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, '').substring(0,10);" required readonly style="font-weight: 900;font-size: 18px;">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="colm colm6">
+                        <div class="section">
+                            <!--<label for="life_sum_assured" class="field-label">Life Sum Assured</label>-->
+                            <label class="field">
+                                <input type="text" name="LifeSumAssured" value="76543" id="life_sum_assured_field" class="gui-input"
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, '').substring(0,10);" placeholder="Not Computed" required readonly style="font-weight: 900;font-size: 18px;">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="colm colm6">
+                  <div class="section">
+                    <label class="field">
+                      <span class="pull-center" style="display:block;width:100%;">
+                        <a class="btn standard btn-icon-reveal pull-right" href="javascript:;" style="width:100%; background: #626262"
+                           id="calculate-policy-button">
+                          <i class="fa fa-calculator"></i>
+                          <span style="color:white;" class="text">Calculate</span>
+                        </a>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    	</form>
+		</div>
+	</div>
+</div>
+                  </div>
+              </section>
+              </div>
+      </div>
+
