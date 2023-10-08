@@ -201,8 +201,8 @@ export class CapitalBuilder {
     //const tempDiv = document.createElement('div');
     //tempDiv.innerHTML = navElementString.trim();
     // console.log(navElementString.trim());
-    const progress = document.querySelector(".progressbar");
-    console.log(`tgis is the handlebar element: ${progress}`);
+    const progress = document.querySelector(".progress");
+    console.log(`this is the handlebar element: ${progress}`);
     const progressSteps = document.querySelectorAll(".progress-step");
 
     progressSteps.forEach((progressStep, idx) => {
@@ -213,7 +213,7 @@ export class CapitalBuilder {
         }
     });
 
-    const progressActive = progressSteps.querySelectorAll(".progress-step-active");
+    const progressActive = document.querySelectorAll(".progress-step-active");
 
     progress.style.width = ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
 

@@ -22,7 +22,7 @@
                         <div class="section">
                             <label class="field select">
                                 <select id="title" name="Title">
-                                    <option value="">Title</option>
+                                    <option value="" disabled selected>Select Title</option>
                                     <option value="Miss">Miss</option>
                                     <option value="Master">Master</option>
                                     <option value="Mr">Mr</option>
@@ -64,7 +64,7 @@
                         <label class="field date-container">
                           <input type="text" readonly name="DateOfBirth" id="date" class="gui-input"
                                  data-language="en" data-min-view="days" data-view="years" data-date-format="dd-mm-yyyy"
-                                 placeholder="dd-mm-yyyy" required="">
+                                 placeholder="Date of Birth" required="">
                           <i class="date-icon fa fa-calendar" aria-hidden="true"></i>
                       </label>
                     </div>
@@ -73,7 +73,7 @@
                         <div class="section">
                             <label class="field select">
                                 <select id="gender" name="Gender">
-                                    <option value="">Select gender...</option>
+                                    <option value="" disabled selected>Select Gender</option>
                                     <option value="M"> Male</option>
                                     <option value="F">Female</option>
                                 </select>
@@ -91,7 +91,7 @@
                     <div class="colm colm4">
                         <div class="section">
                             <label class="field">
-                                <input type="tel" name="TelePhone" id="telephone" class="gui-input phone_mask" maxlength="11" placeholder="0xxxxxxxxxx" required="">
+                                <input type="tel" name="TelePhone" id="telephone" class="gui-input phone_mask" maxlength="11" placeholder="Phone Number" required="">
                             </label>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                             <label class="field date-container">
                               <input type="text" readonly name="StartDate" id="startDate" class="gui-input datepicker-here"
                                      data-language="en" data-min-view="days" data-view="years" data-date-format="dd-mm-yyyy"
-                                     placeholder="dd-mm-yyyy" required="">
+                                     placeholder="Insurance Start Date" required="">
                               <i class="date-icon fa fa-calendar" aria-hidden="true"></i>
                             </label>
                         </div>
@@ -109,7 +109,7 @@
                         <div class="section">
                             <label class="field select">
                                 <select class="form-control" id="identification_type" name="IdentificationType">
-                                    <option value="">Select One</option>
+                                    <option value="" disabled selected>Select Means of Identification</option>
                                     <option value="Driver's Licence">Driver's Licence</option>
                                     <option value="International Passport">International Passport</option>
                                     <option value="National ID. Card">National ID. Card</option></select>
@@ -129,7 +129,7 @@
                             <label class="field prepend-icon file">
                                <!-- <span class="button btn-primary">Choose File</span>-->
                                 <input class="gui-file" name="IdetificationImage" id="idUploaderFile" type="file" required="required">
-                                <input class="gui-input" name="IdetificationText" id="idUploaderFileText" placeholder="no file selected" readonly="" type="text">
+                                <input class="gui-input" name="IdetificationText" id="idUploaderFileText" placeholder="Upload Means Of Identification" readonly="" type="text">
                                 <span class="field-icon"><i class="fa fa-upload"></i></span>
                             </label>
                         </div>

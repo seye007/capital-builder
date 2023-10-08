@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../src/css/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/beb513e456.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../src/css/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/beb513e456.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.css">
+    <style>
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.card-header {
+  background-color: #900000;
+  color: white;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #900;
+  margin: 0;
+  text-align: center;
+}
+
+.card-body {
+  padding: 30px;
+  background-color: whitesmoke;
+}
+
+.banner-para {
+  background-color: #ededed;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+  .banner-para h4 {
+    color: #4d4d4d;
+  }
+
+.benefits-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+  .benefits-list li {
+    display: flex;
+    align-items: center;
+    color: #4d4d4d;
+    margin-bottom: 15px;
+  }
+
+  .benefits-list i {
+    color: #900000;
+    font-size: 2rem;
+    margin-right: 15px;
+  }
+
+.policy-form label,
+.policy-form span {
+  color: #4d4d4d;
+}
+
+.policy-input {
+  width: 100%;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.policy-button {
+  background-color: #900000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  float: right;
+  cursor: pointer;
+}
+
+.form-sha {
+  -webkit-box-shadow: -1px 1px 43px 1px rgba(219,216,219,1);
+  -moz-box-shadow: -1px 1px 43px 1px rgba(219,216,219,1);
+  box-shadow: -1px 1px 43px 1px rgba(219,216,219,1);
+}
+
+
+.info-item {
+  margin-bottom: 15px;
+}
+
+.info-label {
+  font-weight: bold;
+}
+
+.info-value {
+  color: #6f6f6f;
+}
+
+.btn-edit {
+  background-color: #A50505;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: block;
+  margin: 20px auto;
+}
+
+.renewal-form {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  margin-top: 30px;
+}
+
+  .renewal-form label {
+    font-weight: bold;
+  }
+
+  .renewal-form select,
+  .renewal-form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+  }
+
+  .renewal-form .form-group {
+    margin-bottom: 20px;
+  }
+
+  .renewal-form button, 
+  .policy-details-button, 
+  .payment-button {
+    background-color: #A50505;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+
+
+
+
+
+
+
+.renewal-summary {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+  .renewal-summary h4 {
+    color: #4d4d4d;
+    margin-bottom: 20px;
+  }
+
+  .renewal-summary span {
+    color: #4d4d4d;
+  }
+
+
+form .button {
+  margin-top: 25px;
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  padding: 9px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: #900000 !important;
+  transition: all 0.2s ease;
+  color: white !important;
+  border: none;
+}
+
+  form .button.active {
+    background: #900000;
+    pointer-events: auto
+  }
+
+  form .button:hover {
+    background: #900000
+  }
+  
+  @media(max-width:767px){
+    #content-container{
+      height: auto !important;
+    }
+  }
+
+#content-container {
+  height: auto;
+  height: 600px
+}
+
+        .text {
+        color: #4d4d4d
+        }
+
+        .payment-container {
+        border-radius: 8px;
+        padding: 40px;
+        box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 5px 12px -2px rgba(0,0,0,0.1), 0 18px 36px -6px rgba(0,0,0,0.1);
+        }
+
+        .payment-container .payment-title {
+        font-size: 20px;
+        }
+
+        .payment-container form .category {
+        margin-top: 10px;
+        padding-top: 20px;
+        }
+
+        .payment-container form .category label {
+        width: 100%;
+        height: 65px;
+        padding: 20px;
+        box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 5px;
+        }
+
+        .category label:nth-child(2), label:nth-child(3) {
+        margin: 15px 0;
+        }
+
+        .imgContainer img {
+        width: 50px;
+        height: auto;
+        }
+
+        label .imgName {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        .imgName span {
+        margin-left: 20px;
+        }
+
+        .imgName .imgContainer {
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .check {
+        display: none;
+        }
+
+        .check i {
+        font-size: 18px;
+        }
+
+        #paystack:checked ~ .category .payment-method {
+        box-shadow: 0px 0px 0px 1px #6064b6;
+        }
+
+        #paystack:checked ~ .category .payment-method .check {
+        display: block;
+        }
+
+        h4 {
+	font-weight: bold;
+	margin: 0;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #efe7e7;
+}
+
+.info-label {
+	color: #6a6a6a;
+	font-weight: bold;
+}
+
+.info-value {
+	color: #333;
+	margin-left: 5px;
+}
+
+.product-detail-label {
+	color: #6a6a6a;
+	font-weight: bold;
+}
+
+.product-detail-value {
+	color: #333;
+}
+
+.payment-option {
+	border: 1px solid #e0e0e0;
+	padding: 20px 0px 20px 20px;
+	border-radius: 10px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s;
+}
+
+.payment-option:hover {
+    background-color: #efe7e7;
+    transform: translateY(-5px);
+}
+
+.payment-option img {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.summary-detail {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+	border-top: 1px solid #e0e0e0;
+	color: #333;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.summary-total {
+	font-size: 20px;
+}
+
+.make-payment-btn {
+	display: block;
+	width: 100%;
+	padding: 15px;
+	background-color: #900000;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s;
+	font-size: 18px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+	.make-payment-btn:hover {
+		background-color: #800000;
+		transform: scale(1.05);
+	}
+
+
+#content-container {
+	height: auto;
+}
+
+.card{
+	margin-top: 25px;
+	margin-bottom: 25px
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg container-fluid" style=" background: #900;">
+        <div class="container" style="background: #900;">
+            <a class="navbar-brand" href="#">
+                <img class="retina" src="https://custodianplc.com.ng/img/logo-white.png" data-logo="https://custodianplc.com.ng/img/logo-white.png" alt="custodian-logo" style="height: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item social-item  d-flex justify-content-center" style=" padding: 1rem;">
+                        <a href="https://twitter.com/CustodianPLC" target="blank" class="tooltips" data-placement="top" data-rel="tooltip" data-original-title="Twitter" style=" color: white;">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item social-item  d-flex justify-content-center" style=" padding: 1rem;">
+                        <a href="https://facebook.com/CustodianPLC/" target="blank" class="tooltips" data-placement="top" data-rel="tooltip" data-original-title="Facebook" style="color: white;">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item social-item  d-flex justify-content-center" style="padding: 1rem;">
+                        <a href="https://www.instagram.com/custodianplc" target="blank" class="tooltips" data-placement="top" data-rel="tooltip" data-original-title="Instagram" style="color: white;">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+      <section class="page-header b-bordered t-bordered hpadding">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 d-flex m-0 justify-content-between">
+              <h1 class="title"> Capital Builder</h1>
+              <nav class="c-breadcrumb-1 -style-icons pull-right nav-nav">
+                <ol class="c-breadcrumb-1-inner">
+                  <li class="c-breadcrumb-1-item">
+                    <a href="https://custodianplc.com.ng" class="c-breadcrumb-1-link">
+                      <i class="c-breadcrumb-1-icon fa fa-home" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="c-breadcrumb-1-item">
+                    <a href="#" class="c-breadcrumb-1-link">
+                      <i class="c-breadcrumb-1-icon fa fa-file-text-o" aria-hidden="true"></i>
+                      Life Insurance
+                    </a>
+                  </li>
+                  <li class="c-breadcrumb-1-item">
+                    <a href="#" class="c-breadcrumb-1-link">
+                      <i class="c-breadcrumb-1-icon " aria-hidden="true"></i>
+                      Capital Builder
+                    </a>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container product-content" style="margin-top: 1.2rem; margin-bottom: 1rem;">
+        <div class="card form-sha">
+            <div class="card-body justify-content-center align-items-center">
+              <form asp-action="paymentconfirmation" method="post">
+                <h4 class="card-title">Checkout</h4>
+                <div class="row">
+                  <div class="col-md-8 py-4">
+                    <h5>Personal Details</h5>
+                    <div class="p-3">
+                      <div class="info-item mb-3">
+                        <span class="info-label">Full Name:</span>
+                        <span class="info-value">Kenneth Valdez</span>
+                      </div>
+                      <div class="info-item mb-3">
+                        <span class="info-label">Email:</span>
+                        <span class="info-value">fip@jukmuh.al</span>
+                      </div>
+                      <div class="info-item mb-3">
+                        <span class="info-label">Phone:</span>
+                        <span class="info-value">(239) 816-9029</span>
+                      </div>
+                      <div class="info-item mb-3">
+                        <span class="info-label">Policy Number:</span>
+                        <span class="info-value">123456</span>
+                      </div>
+                    </div>
+          
+                    <h5 class="">Product Details</h5>
+                    <div class="p-3">
+                      <div class="product-detail mb-3">
+                        <span class="product-detail-label">Category:</span>
+                        <span class="product-detail-value">Life</span>
+                      </div>
+                      <div class="product-detail mb-3">
+                        <span class="product-detail-label">Product:</span>
+                        <span class="product-detail-value">Annuity</span>
+                      </div>
+                      <div class="product-detail mb-3">
+                        <span class="product-detail-label">Policy Number:</span>
+                        <span class="product-detail-value">1234567</span>
+                      </div>
+                      <div class="product-detail mb-3">
+                        <span class="product-detail-label">Premium:</span>
+                        <span class="product-detail-value">23,445</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-4" style="background-color: #f7f7f7;">
+                    <h5>Order Summary</h5>
+                    <div class="summary-detail">
+                      <span>Price</span>
+                      <span class="product-detail-value">23,445</span>
+                    </div>
+                    <div class="summary-detail">
+                      <span>Taxes</span>
+                      <span class="product-detail-value">0.0</span>
+                    </div>
+                    <div class="summary-detail">
+                      <span>Discount</span>
+                      <span class="product-detail-value">0.0</span>
+                    </div>
+                    <div class="summary-detail">
+                      <span class="summary-total">Total</span>
+                      <span class="summary-total">23,445</span>
+                    </div>
+                    <div class="mt-3">
+                      <h4 class="mb-3">Payment Options</h4>
+                      <label class="payment-option w-100">
+                        <input type="radio" name="paymentMethod" class="px-1">
+                        <img src="../src/img/paystack.256x252.png" alt="paystack" class="px-1">
+                        <span class="pl-3 px-1" style="font-size: 20px;color:#900000;font-weight: bold;">Paystack</span>
+                      </label>
+                    </div>
+                    <input type="submit" class="mt-2 make-payment-btn button" value="Make Payment" formaction="/Home/PolicyDetails">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+</body>
+</html>

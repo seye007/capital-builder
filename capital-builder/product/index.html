@@ -12,64 +12,6 @@
     <link href="../src/css/style.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/beb513e456.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.css">
-    <style>
-        
-        .progressbar{
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            counter-reset: step;
-            margin: 1.5rem 0 1.5rem;
-        }
-
-        .progressbar::before,
-        .progress{
-            content:"";
-            position: absolute;
-            top:50%;
-            transform: translateY(-50%);
-            height: 4px;
-            width:100%;
-            background-color: #dcdcdc;
-        }
-
-        .progress{
-            background-color: #900000;
-            width: 0%;
-            transition: 0.3s;
-        }
-
-        .progress-step{
-            width: 2.1875rem;
-            height: 2.1875rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #dcdcdc;
-            border-radius: 50%;
-            z-index: 2;
-        }
-
-        .progress-step::before{
-            counter-increment: step;
-            content: counter(step);
-        }
-
-        .progress-step::after{
-            content: attr(data-title);
-            position: absolute;
-            top: calc(100% + 0.5rem);
-            font-size: 0.85rem;
-            color: #666;
-            border: 3px solid transparent; 
-        }
-
-        .progress-step-active{
-            background-color: white;
-            border: 3px solid #900000; 
-            color: #900000;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg container-fluid" style=" background: #900;">
@@ -82,17 +24,17 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item social-item" style=" padding: 1rem;">
+                    <li class="nav-item social-item  d-flex justify-content-center" style=" padding: 1rem;">
                         <a href="https://twitter.com/CustodianPLC" target="blank" class="tooltips" data-placement="top" data-rel="tooltip" data-original-title="Twitter" style=" color: white;">
                             <i class="fa fa-twitter" aria-hidden="true"></i>
                         </a>
                     </li>
-                    <li class="nav-item social-item" style=" padding: 1rem;">
+                    <li class="nav-item social-item  d-flex justify-content-center" style=" padding: 1rem;">
                         <a href="https://facebook.com/CustodianPLC/" target="blank" class="tooltips" data-placement="top" data-rel="tooltip" data-original-title="Facebook" style="color: white;">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                         </a>
                     </li>
-                    <li class="nav-item social-item" style="padding: 1rem;">
+                    <li class="nav-item social-item  d-flex justify-content-center" style="padding: 1rem;">
                         <a href="https://www.instagram.com/custodianplc" target="blank" class="tooltips" data-placement="top" data-rel="tooltip" data-original-title="Instagram" style="color: white;">
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                         </a>

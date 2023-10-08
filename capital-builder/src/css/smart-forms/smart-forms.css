@@ -2393,13 +2393,25 @@ html, body {
 
 /* @changes to the datepicker and month picker widget in v.4  
 ------------------------------------------------------------- */
-.ui-datepicker-today a,
-.ui-datepicker-today a:hover,
-.ui-datepicker .ui-state-highlight {
-   background: #FFFA90 !important;
-   font-weight: 700;
-   color: #444;
+.ui-widget-content {
+   border: 1px solid #dddddd !important;
+   background: #f9efef !important;
+   color: #333333;
 }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+   border: 1px solid #c5c5c5 !important;
+   background: #d7b2b2 !important;
+   font-weight: normal;
+   color: #fff;
+}
+
+.ui-datepicker-today a, .ui-datepicker-today a:hover, .ui-datepicker .ui-state-highlight {
+   background: #d7b2b2  !important;
+   font-weight: 700;
+   color: #fff;
+}
+
 
 .ui-monthpicker .ui-datepicker-today a,
 .ui-monthpicker .ui-datepicker-today a:hover,
